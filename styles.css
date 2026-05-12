@@ -554,40 +554,48 @@ section {
 }
 
 .skill-category {
-    background: linear-gradient(135deg, rgba(0, 217, 255, 0.05) 0%, rgba(131, 92, 246, 0.05) 100%);
-    border: 1px solid var(--border-color);
-    border-radius: 0.75rem;
-    padding: var(--spacing-lg);
+    background: linear-gradient(135deg, rgba(0, 217, 255, 0.08) 0%, rgba(131, 92, 246, 0.08) 100%);
+    border: 1.5px solid var(--border-color);
+    border-radius: 1rem;
+    padding: var(--spacing-lg) var(--spacing-lg);
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
     backdrop-filter: blur(10px);
     animation: fadeInUp 0.6s ease-out;
     transition: all var(--transition-normal);
+    box-shadow: 0 4px 15px rgba(0, 217, 255, 0.05);
 }
 
 .skill-category:hover {
     border-color: var(--accent-primary);
-    box-shadow: 0 8px 20px rgba(0, 217, 255, 0.1);
+    box-shadow: 0 12px 30px rgba(0, 217, 255, 0.15);
+    background: linear-gradient(135deg, rgba(0, 217, 255, 0.12) 0%, rgba(131, 92, 246, 0.12) 100%);
+    transform: translateY(-5px);
 }
 
 .skill-category h4 {
     color: var(--accent-primary);
     margin-bottom: var(--spacing-md);
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
+    letter-spacing: 1.2px;
+    font-weight: 700;
 }
 
 .skill-chips {
     display: flex;
     flex-wrap: wrap;
     gap: var(--spacing-sm);
+    flex-grow: 1;
+    align-content: flex-start;
 }
 
 .skill-chip {
-    background: linear-gradient(135deg, rgba(0, 217, 255, 0.2) 0%, rgba(131, 92, 246, 0.2) 100%);
-    border: 1px solid rgba(0, 217, 255, 0.4);
+    background: linear-gradient(135deg, rgba(0, 217, 255, 0.25) 0%, rgba(131, 92, 246, 0.25) 100%);
+    border: 1px solid rgba(0, 217, 255, 0.5);
     color: var(--text-primary);
-    padding: 0.5rem 1rem;
+    padding: 0.55rem 1.2rem;
     border-radius: 1.5rem;
     font-size: 0.8rem;
     font-weight: 500;
@@ -595,13 +603,14 @@ section {
     display: inline-block;
     white-space: nowrap;
     cursor: default;
+    backdrop-filter: blur(5px);
 }
 
 .skill-chip:hover {
-    background: linear-gradient(135deg, rgba(0, 217, 255, 0.35) 0%, rgba(131, 92, 246, 0.35) 100%);
+    background: linear-gradient(135deg, rgba(0, 217, 255, 0.4) 0%, rgba(131, 92, 246, 0.4) 100%);
     border-color: var(--accent-primary);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 217, 255, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 217, 255, 0.25);
 }
 
 @media (max-width: 1024px) {
