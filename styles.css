@@ -549,7 +549,7 @@ section {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-lg);
 }
 
@@ -584,9 +584,15 @@ section {
     margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
     }
 }
 
