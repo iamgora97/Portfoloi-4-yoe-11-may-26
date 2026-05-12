@@ -577,11 +577,31 @@ section {
     font-weight: 600;
 }
 
-.skill-items {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-    line-height: 1.8;
-    margin: 0;
+.skill-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.skill-chip {
+    background: linear-gradient(135deg, rgba(0, 217, 255, 0.2) 0%, rgba(131, 92, 246, 0.2) 100%);
+    border: 1px solid rgba(0, 217, 255, 0.4);
+    color: var(--text-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all var(--transition-normal);
+    display: inline-block;
+    white-space: nowrap;
+    cursor: default;
+}
+
+.skill-chip:hover {
+    background: linear-gradient(135deg, rgba(0, 217, 255, 0.35) 0%, rgba(131, 92, 246, 0.35) 100%);
+    border-color: var(--accent-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 217, 255, 0.2);
 }
 
 @media (max-width: 1024px) {
