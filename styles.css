@@ -408,13 +408,14 @@ a:hover {
    ============================================== */
 
 section {
-    padding: var(--spacing-xl) 0;
+    padding: 5rem 0;
+    margin-bottom: 2rem;
     position: relative;
 }
 
 .section-title {
     font-size: clamp(2rem, 5vw, 3rem);
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: 3.5rem;
     text-align: center;
     position: relative;
     display: inline-block;
@@ -1199,7 +1200,8 @@ section {
     }
     
     section {
-        padding: var(--spacing-lg) 0;
+        padding: 3rem 0;
+        margin-bottom: 1rem;
     }
     
     .metrics-grid {
